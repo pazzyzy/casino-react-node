@@ -1,0 +1,5 @@
+export const BJ_ROUTE = '/blackjack'
+export const LOGIN_ROUTE = '/login'
+export const REGISTRATION_ROUTE = '/registration'
+export const CASINO_ROUTE = '/'
+export const DEPOSIT_ROUTE = '/deposit'

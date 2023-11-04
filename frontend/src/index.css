@@ -6,4 +6,8 @@
 body {
   font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
     'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  /* background-color: #0a470f; */
+  background-image: url('./imgs/background.jpg');
+  background-size: cover;
 }
