@@ -26,6 +26,8 @@ const Auth = observer(() => {
 
       user.setUser(user)
       user.setIsAuth(true)
+      user.setBalance(data.data.balance)
+      user.setUserName(data.data.login)
       navigate(CASINO_ROUTE)
     } catch (e) {
       alert(e.response.message)

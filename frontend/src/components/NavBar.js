@@ -12,17 +12,19 @@ import { useNavigate } from 'react-router-dom'
 
 const NavBar = observer(() => {
   const { user } = useContext(Context)
+  console.log('balance=', user.balance)
+  console.log('login=', user.userName)
+
   const navigate = useNavigate()
 
   const logOut = () => {
     user.setIsAuth(false)
     navigate(CASINO_ROUTE)
   }
-  const responseAuth = {
-    login: localStorage.getItem('response'),
-    balance: localStorage.getItem('balance'),
-  }
-  console.log(responseAuth)
+  // const responseAuth = {
+  //   login: localStorage.getItem('response'),
+  //   balance: localStorage.getItem('balance'),
+  // }
 
   return (
     <Navbar bg="dark" data-bs-theme="dark">
@@ -33,7 +35,7 @@ const NavBar = observer(() => {
 
         {user.isAuth ? (
           <Nav className="ml-auto" style={{ color: 'white' }}>
-            <div className="p-2">Добро пожаловать {responseAuth.login}</div>
+            <div className="p-2">Добро пожаловать {user.userName}</div>
 
             <Button variant={'outline-light'} className="ms-2">
               Депозит

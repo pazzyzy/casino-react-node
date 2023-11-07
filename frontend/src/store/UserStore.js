@@ -4,6 +4,8 @@ export default class UserStore {
   constructor() {
     this._isAuth = false
     this._user = {}
+    this._balance = 0
+    this._userName = ''
     makeAutoObservable(this)
   }
 
@@ -13,6 +15,13 @@ export default class UserStore {
   setUser(user) {
     this._user = user
   }
+  setBalance(balance) {
+    this._balance = balance
+  }
+
+  setUserName(userName) {
+    this._userName = userName
+  }
 
   get isAuth() {
     return this._isAuth
@@ -20,5 +29,13 @@ export default class UserStore {
 
   get user() {
     return this._user
+  }
+
+  get balance() {
+    return this._balance
+  }
+
+  get userName() {
+    return this._userName
   }
 }

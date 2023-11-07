@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
-import { Switch, Route, Redirect, Routes } from 'react-router-dom'
-import { authRoutes, publicRoutes } from '../routes.js'
-import { CASINO_ROUTE } from '../utils/const.js'
+import { Route, Routes } from 'react-router-dom'
+import { publicRoutes } from '../routes.js'
 import { Context } from '../index.js'
 
 const AppRouter = () => {
