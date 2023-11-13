@@ -2,7 +2,7 @@
 
 ## Installation:
 
-git clone https://github.com/pazzyzy/casino-react\
+git clone https://github.com/pazzyzy/casino-react
 cd casino-react\
 npm install\
 cd casino-react/backend\
