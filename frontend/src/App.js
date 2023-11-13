@@ -1,6 +1,6 @@
 import './App.css'
 import { useEffect, useState } from 'react'
-import Button from './components/Button'
+import Button from './components/MyButton'
 import { BrowserRouter } from 'react-router-dom'
 import AppRouter from './components/AppRouter.js'
 import NavBar from './components/NavBar'

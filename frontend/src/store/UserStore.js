@@ -6,6 +6,7 @@ export default class UserStore {
     this._user = {}
     this._balance = 0
     this._userName = ''
+    this._blackJackDeck = []
     makeAutoObservable(this)
   }
 
@@ -23,6 +24,10 @@ export default class UserStore {
     this._userName = userName
   }
 
+  setBlackJackDeck(blackJackDeck) {
+    this._blackJackDeck = blackJackDeck
+  }
+
   get isAuth() {
     return this._isAuth
   }
@@ -37,5 +42,9 @@ export default class UserStore {
 
   get userName() {
     return this._userName
+  }
+
+  get blackJackDeck() {
+    return this._blackJackDeck
   }
 }
